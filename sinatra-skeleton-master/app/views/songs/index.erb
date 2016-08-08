@@ -1,1 +1,10 @@
 <h1>Songs Page</h1>
+
+<% @songs.each do |song| %>
+<div class ="song">
+  <h3>Title: <%= song.title %></h3>
+  <h4>Singer: <%= song.author %></h4>
+  <h5>url: <%= song.url %></h5>
+</div>
+
+<% end %>
