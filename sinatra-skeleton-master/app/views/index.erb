@@ -4,8 +4,13 @@
 
 <hr>
 
+<% if session[:login_error] %>
+  <p><%= session[:login_error] %></p>
+<% end %>
+
 <form method="POST" action="/validate">
   <p>Email: <input type="text" name="email"> </p>
   <p>Password: <input type="password" name="password"> </p>
   <p><input type="submit" value="Go!"> </p>
 </form>
+
