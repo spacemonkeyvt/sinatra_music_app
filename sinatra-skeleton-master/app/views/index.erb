@@ -1,6 +1,11 @@
 <h1>Songs App</h1>
 
-<p>Login? <a href="/login">Yes please!</a></p>
+<p>New User? <a href="/signup">Yes please!</a></p>
 
 <hr>
 
+<form method="POST" action="/validate">
+  <p>Email: <input type="text" name="email"> </p>
+  <p>Password: <input type="password" name="password"> </p>
+  <p><input type="submit" value="Go!"> </p>
+</form>
